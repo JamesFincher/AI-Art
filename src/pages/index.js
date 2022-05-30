@@ -1,11 +1,14 @@
 import React from "react"
-
+import Header from "../components/Header"
+import Summary from "../components/Summary"
 export default function Home() {
   return (
-    <div className="md:container md:mx-auto text-primary">
-      <p className="underline decoration-sky-600 md:decoration-blue-400">
-        testing
-      </p>
+    <div
+      id="container"
+      className="flex  flex-auto flex-col p-4  bg-bg text-tp min-h-screen"
+    >
+      <Header id="header" className="p-4 bg-gray-400 flex" />
+      <Summary />
     </div>
   )
 }
