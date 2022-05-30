@@ -1,5 +1,11 @@
 import React from "react"
 
 export default function Home() {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>
+  return (
+    <div className="md:container md:mx-auto text-primary">
+      <p className="underline decoration-sky-600 md:decoration-blue-400">
+        testing
+      </p>
+    </div>
+  )
 }
