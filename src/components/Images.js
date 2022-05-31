@@ -19,7 +19,10 @@ const Images = () => {
   }
   const data = useStaticQuery(graphql`
     {
-      data: allFile(filter: { ext: { eq: ".png" } }) {
+      data: allFile(
+        filter: { ext: { eq: ".png" } }
+        sort: { order: DESC, fields: modifiedTime }
+      ) {
         allArt: nodes {
           publicURL
           name
